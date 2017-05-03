@@ -7,9 +7,9 @@ return [
     | Environment Specific Packages Configuration
     |--------------------------------------------------------------------------
     |
-    | This configuration file is used to define any package requirements that 
-    | are loaded over some specific environment like you might have some 
-    | development packages installed that you do not wish to load over 
+    | This configuration file is used to define any package requirements that
+    | are loaded over some specific environment like you might have some
+    | development packages installed that you do not wish to load over
     | production and/or staging.
     |
     | Usage:
@@ -24,13 +24,13 @@ return [
     |
     | In case you need to load this provider in multiple environments like
     | local, testing and development, you can do so like this:
-    | 
+    |
     | 'providers' => [
     |     'local,testing,development'  => [
     |         Provider\Package\SomeServiceProvider::class,
     |     ],
     | ],
-    | 
+    |
     | You can also do any kind of combinations in configuration like this:
     |
     | 'providers' => [
@@ -44,7 +44,7 @@ return [
     |         Provider\Package\AnotherServiceProvider::class,
     |     ],
     | ],
-    | 
+    |
     */
 
 
