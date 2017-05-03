@@ -1,10 +1,11 @@
 {
-    "name": "meSingh/EnvPackages",
+    "name": "mesingh/laravel-env-packages",
     "type": "library",
-    "description": "EnvironmentSpecificPackages",
+    "description": "This package lets you define various package requirements according to the environment.",
     "keywords": [
         "meSingh",
-        "EnvPackages"
+        "EnvPackages",
+        "laravel"
     ],
     "homepage": "https://github.com/meSingh/laravel-env-packages",
     "license": "MIT",
@@ -20,18 +21,9 @@
         "illuminate/support": "~5",
         "php" : "~5.6|~7.0"
     },
-    "require-dev": {
-        "phpunit/phpunit" : "~4.0||~5.0||~6.0",
-        "squizlabs/php_codesniffer": "^2.3"
-    },
     "autoload": {
         "psr-4": {
             "meSingh\\EnvPackages\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "meSingh\\EnvPackages\\": "tests"
         }
     },
     "scripts": {
