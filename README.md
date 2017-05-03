@@ -10,7 +10,7 @@ This package lets you define various package requirements according to the envir
 Via Composer
 
 ``` bash
-$ composer require meSingh/laravel-env-packages
+$ composer require mesingh/laravel-env-packages
 ```
 
 Then add the service provider in `config/app.php`:
