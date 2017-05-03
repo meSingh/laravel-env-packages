@@ -1,0 +1,50 @@
+{
+    "name": "meSingh/EnvPackages",
+    "type": "library",
+    "description": "EnvironmentSpecificPackages",
+    "keywords": [
+        "meSingh",
+        "EnvPackages"
+    ],
+    "homepage": "https://github.com/meSingh/laravel-env-packages",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mandeep Singh",
+            "email": "im@msingh.me",
+            "homepage": "https://www.msingh.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0||~6.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "meSingh\\EnvPackages\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "meSingh\\EnvPackages\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
